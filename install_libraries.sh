@@ -26,7 +26,7 @@ apt install -y libgtk-3-dev clang gawk libffi-dev graphviz xdot pkg-config libbo
 apt install -y libboost-filesystem-dev gengetopt help2man groff pod2pdf libtool octave liboctave-dev epstool transfig paraview
 apt install -y libhdf5-dev libvtk7-dev libboost-all-dev libcgal-dev libtinyxml-dev qtbase5-dev libvtk7-qt-dev libopenmpi-dev
 apt install -y xterm graphicsmagick ghostscript libhdf5-serial-dev vtk7 cython3 python3 python3-pip pip python3-numpy gcc g++ 
-apt install -y gfortran python3-matplotlib python3-scipy python3-h5py meld ffmpeg  make libfl-dev libfftw3-dev libsuitesparse-dev
+apt install -y gfortran python3-matplotlib python3-scipy python3-h5py meld ffmpeg  make libfl-dev libfftw3-dev
 apt install -y libblas-dev liblapack-dev uidmap apt-transport-https ca-certificates curl gnupg m4 wget autopoint gperf patchutils  
 apt install -y perl libfl2 zlib1g ccache libgoogle-perftools-dev numactl perl-doc device-tree-compiler libexpat-dev
 apt install -y clang-format-11 gtkwave autotools-dev libmpc-dev libmpfr-dev libgmp-dev libusb-1.0-0-dev bc
