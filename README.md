@@ -3,8 +3,8 @@
 Open CAD Environment repo is aiming to create a professional grade envionment for EE engineers to be able to use Open Source tools for IC design much easier. We use `Enviroment Modules` to track which verison of each tool we are using as used in the professional environments. This allow switching between different versions of the tools much easier and maintaining versions correctly.
 
 More about `Environment Modules` could be found [here](https://modules.readthedocs.io/en/latest/).
-Also, a video tutorial about `Environment Modules` could be found:
 
+Also, a video tutorial about `Environment Modules` could be found:
 [![Environment Modules Intro Video](https://img.youtube.com/vi/0m72ogpnH-s/0.jpg)](https://www.youtube.com/watch?v=0m72ogpnH-s)
 
 
