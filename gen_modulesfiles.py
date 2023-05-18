@@ -46,9 +46,9 @@ def main ():
 
     gen_path = os.path.dirname(os.path.abspath(__file__))
     if "pythonlibs" in TOOL:
-        module_tmp = f"{gen_path}/pythonlibs_template.jn"
+        module_tmp = f"{gen_path}/templates/pythonlibs_template.jn"
     else:
-        module_tmp = f"{gen_path}/module_template.jn"
+        module_tmp = f"{gen_path}/templates/module_template.jn"
 
     with open(module_tmp) as f:
         tmpl = Template(f.read())
