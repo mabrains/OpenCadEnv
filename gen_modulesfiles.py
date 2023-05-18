@@ -47,8 +47,6 @@ def main ():
     gen_path = os.path.dirname(os.path.abspath(__file__))
     if "pythonlibs" in TOOL:
         module_tmp = f"{gen_path}/pythonlibs_template.jn"
-    elif "docker" in TOOL:
-        module_tmp = f"{gen_path}/docker_template.jn"
     else:
         module_tmp = f"{gen_path}/module_template.jn"
 

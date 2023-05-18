@@ -1,0 +1,14 @@
+#%Module
+
+proc ModulesHelp { } {
+   puts stderr "Loading {{TOOL}} version {{VERSION}} in environment."
+}
+
+module-whatis "Loading {{TOOL}} version {{VERSION}} in environment.\n"
+
+set basedir "{{ENV_PATH}}/tools/{{TOOL}}-{{VERSION}}"
+
+prepend-path PATH "${basedir}/{{TOOL_BIN}}"
+prepend-path LD_LIBRARY_PATH "${basedir}/{{TOOL_LIB}}"
+
+

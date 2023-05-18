@@ -1,0 +1,10 @@
+#%Module
+
+proc ModulesHelp { } {
+   puts stderr "Loading {{TOOL}} version {{VERSION}} in environment."
+}
+ 
+module-whatis "Loading {{TOOL}} version {{VERSION}} in environment.\n"
+
+setenv PYTHONPATH "{{ENV_PATH}}/tools/{{TOOL}}-{{VERSION}}"
+
