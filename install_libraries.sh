@@ -16,6 +16,7 @@
 # 
 
 export DEBIAN_FRONTEND=noninteractive
+export MODULES_VERSION=5.3.0
 
 apt update  -y
 apt upgrade -y
@@ -29,7 +30,7 @@ apt install -y gfortran python3-matplotlib python3-scipy python3-h5py meld ffmpe
 apt install -y libblas-dev liblapack-dev uidmap apt-transport-https ca-certificates curl gnupg m4 wget autopoint gperf patchutils  
 apt install -y perl libfl2 zlib1g ccache libgoogle-perftools-dev numactl perl-doc device-tree-compiler libexpat-dev
 apt install -y clang-format-11 gtkwave autotools-dev libmpc-dev libmpfr-dev libgmp-dev libusb-1.0-0-dev bc
-apt install -y libcairo-dev swig libspdlog-dev npm ninja-build lemon libeigen3-dev libbz2-dev libboost-thread-dev
+apt install -y libcairo-dev swig libspdlog-dev lemon libeigen3-dev libbz2-dev libboost-thread-dev
 apt install -y libboost-program-options-dev liblzma-dev libboost-test-dev doxygen tclx8.4-dev neovim xvfb bzip2 gdb
 apt install -y gettext libsm-dev libgomp1 libxml2-dev libxslt-dev ncurses-dev patch libpcre2-dev strace tcllib lsb-release
 apt install -y guile-2.2 libpng-dev texlive-science texlive texlive-font-utils transfig gnuplot graphviz libxml2
@@ -41,4 +42,12 @@ apt install -y p7zip-full tree
 
 apt autoremove
 apt clean
+
+curl -LJO https://github.com/cea-hpc/modules/releases/download/v$(MODULES_VERSION)/modules-$(MODULES_VERSION).tar.gz
+tar xfz modules-$(MODULES_VERSION).tar.gz
+
+cd modules
+./configure
+make
+make install
 
